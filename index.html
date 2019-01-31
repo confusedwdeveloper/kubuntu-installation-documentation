@@ -12,6 +12,121 @@
 </head>
 
 <body>
+  <main id="main-doc">
+    <!-- Section 1 which is going to be introduction for kubuntu -->
+    <section class="main-section">
+      <header>
+        <h2>Introduction</h2>
+      </header>
+      <p>Kubuntu is the official flavor of Ubuntu with the KDE 5 Plasma desktop environment. KDE is one of the modern desktop environment on Linux. It is really fast and clean. The KDE 5 Plasma desktop environment runs on low memory and works pretty
+        great.</p>
+      <h3>Why try Kubuntu</h3>
+      <p>There are many good reasons to install Kubuntu, such as: </p>
+      <ul type="circle">
+        <li>Kubuntu makes your PC easier to use.
+        </li>
+        <li>
+          Kubuntu is an operating system built by a friendly worldwide team of expert developers. It contains all the applications you need, including a web browser, office suite, media apps, instant messaging, in addition to many others.
+        </li>
+        <li>
+          Kubuntu is a free, open-source alternative to Windows and Mac OS X.
+        </li>
+        <li>
+          It can be easily installed alongside, or instead of, Windows
+        </li>
+        <li>
+          Extensive community support.
+        </li>
+
+      </ul>
+
+
+    </section>
+    <!-- In this section we are going to describe downloading Kubuntu -->
+
+    <section class="main-section">
+      <header>
+        <h2>Downloading Kubuntu</h2>
+      </header>
+      <p>An iso image of Kubuntu can be downloaded from <a target="_blank" href="https://kubuntu.org/getkubuntu/">official website</a></p>
+      <h3>Verify the iso image</h3>
+      <p>Check the MD5SUM to ensure that your download is complete and that it has given you a fully working ISO to boot, which can be later installed from.</p>
+      <h4>From Windows XP -> 7 -> 8 -> 10</h4>
+      <p>This <a target="_blank" href="#">utility</a> provided by microsoft can be used to verify checksum</p>
+      <h4> From Mac OS X</h4>
+      <p>Open the Terminal app, then navigate to the directory where the ISO is saved. Run:</p>
+      <code>md5 -r name-of-iso.iso</code>
+
+      <p>And compare the output to the hashes page for the ISO file.</p>
+      <h4>From Ubuntu Linux</h4>
+      <p>The first thing to do is to make sure you're in the directory with the .iso file (It will most likely be found in the Downloads directory). Then run the command: </p>
+      <code>md5sum kubuntu-iso-name.iso </code>
+
+    </section>
+    <!-- Next section is going to be about making a bootable usb disk -->
+
+    <section class="main-section">
+      <header>
+        <h2>Making a Bootable USB Stick of Kubuntu</h2>
+      </header>
+      <p>On Windows, <a target="_blank" href="https://rufus.akeo.ie/">Rufus</a> can be used to make bootable Kubuntu 18.04 LTS USB thumb drive.</p>
+      <p>On linux go to the terminal and run the follwing command: </p>
+      <code>$ sudo dd if=/path/to/kubuntu.iso of=usb-name bs=1M</code>
+
+    </section>
+    On next step we'll focus on installing kubuntu
+
+    <section class="main-section">
+      <header>
+        <h2>Installing Kubuntu</h2>
+      </header>
+      <p>Most computers will boot from USB automatically. Simply insert the USB flash drive and either power on your computer or restart it. You should see the welcome window prompting you to choose your language and either install or try the Ubuntu
+        desktop.</p>
+      <p>If your computer doesn't automatically boot from USB, try holding F12 when your computer first starts. With most machines, this will allow you to select the USB device from a system-specific boot menu.</p>
+      <ol type="i">
+        <li>The Kubuntu installer should start. Now select the language and click on Continue.
+        </li>
+        <li>
+          Now select keyboard layout and click on Continue.
+        </li>
+        <li>
+          Now you can either select Minimal installation to install minimal version of Kubuntu or Normal installation to install the full version of Kubuntu. You can also check Install third-party software for graphics and Wi-Fi hardware and
+          additional media formats to install third part drivers and media codecs. It requires internet connectivity. Once you’re done, click on Continue.
+        </li>
+        <li>
+          Now you can select partition method. For new users, or those who don't want to dual boot, you can check guided-use entire disk.
+        </li>
+        <li>
+          Now select timezone and click on Continue.
+        </li>
+        <li>
+          Now type in your user information and click on Continue. The installation should start.
+        </li>
+
+      </ol>
+
+
+
+    </section>
+    <!-- The ending part:conclusion -->
+
+    <section class="main-section">
+      <header>
+        <h2>conclusion</h2>
+      </header>
+      <p>Once the installation is complete click on restart now. You PC should reboot.</p>
+      <p>After a new installation go to terminal and type <code>sudo apt update && sudo apt upgrade --y</code> to update all softwares. You can also install any software you want via terminal. For example: <code>sudo apt install firefox</code>. To
+        remove an app type <code>sudo apt remove firefox</code>.</p>
+
+
+
+
+    </section>
+
+
+
+
+  </main>
 
 </body>
 
