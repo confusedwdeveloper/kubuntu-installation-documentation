@@ -11,7 +11,7 @@
 #navbar {
   grid-area: links;
   position: fixed;
-  width: 100vw;
+  width: 100%;
   top: 0;
   background-color: #fff;
   z-index: 1;
@@ -72,9 +72,49 @@ li {
 
   }
   #main-doc {
-    top: 38vh;
+    top: 42vh;
     font-size: 18px;
     line-height: 1.2;
   }
+
+}
+@media (min-width: 600px) {
+  #main-doc {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+}
+@media (min-width: 700px;) {
+.nav-link {
+  font-size: 1.7em;
+  font-weight: 600;
+}
+
+
+
+}
+@media (min-width: 800px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+    "links content";
+    grid-gap: 1em;
+  }
+  #navbar {
+    width: 30vw;
+    height: 100%;
+    font-size: auto;
+    background: inherit;
+
+  }
+  #main-doc {
+    top: 0;
+  }
+  h2 {
+    text-align: center;
+  }
+
 
 }
