@@ -1,0 +1,63 @@
+.container {
+  font-family: 'Roboto Condensed', sans-serif;
+  background: url("https://www.pixeden.com/media/k2/galleries/131/001-subtle-light-pattern-background-texture.jpg");
+  display: grid;
+  grid-template-areas:
+  "links"
+  "content";
+  padding: 0.5em;
+  margin: 0;
+}
+#navbar {
+  grid-area: links;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  background-color: #fff;
+  z-index: 1;
+  border: 1px solid black;
+  border-bottom: none;
+}
+#main-doc {
+  grid-area: content;
+  position: relative;
+  top: 34vh;
+}
+.nav-link {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+h1 {
+  text-align: center;
+}
+h1, h2, h3, h4 {
+  font-family: 'Roboto', sans-serif;
+}
+a:hover {
+  color: red;
+}
+li {
+  padding: 0.3em;
+}
+.main-section a {
+  animation-name: colorful;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes colorful {
+  0% {
+    color: blue;
+  }
+  50%; {
+    color: red;
+  }
+  100%; {
+    color: blue;
+  }
+
+
+
+}
