@@ -73,6 +73,8 @@ li {
   }
   #main-doc {
     top: 38vh;
+    font-size: 18px;
+    line-height: 1.2;
   }
 
 }
